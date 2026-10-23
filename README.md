@@ -47,4 +47,4 @@ git push
 
 ## Autoria
 
-- Conta GitHub:Luiz Antônio da Silva Júnior
+- Luiz Antônio da Silva Júnior
