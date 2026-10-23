@@ -82,7 +82,7 @@ git push
 | Commit | Descrição |
 | --- | --- |
 | `7dca420` | Commit inicial: estrutura do projeto e artefato base `novo.py` |
-| *(ver `git log`)* | Modificação de `novo.py` e criação de `nova_funcionalidade.py` |
+| `f8437b4` | Modificação de `novo.py` (v1.1) e criação de `nova_funcionalidade.py` |
 
 Consulta do histórico:
 ```bash
