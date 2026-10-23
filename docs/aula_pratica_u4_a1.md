@@ -121,3 +121,37 @@ avançadas (como *branches* e *Pull Requests*) permitem isolar o desenvolvimento
 antes da integração final. O resultado obtido foi um repositório remoto contendo a versão mais
 atualizada dos artefatos, demonstrando que é possível controlar tanto a obtenção dos artefatos
 quanto o envio das modificações/criações para o repositório compartilhado.
+
+## 6. Checklist de Verificação (entrega)
+
+- [x] **Projeto criado no ambiente remoto com sucesso**
+  - Repositório público `carolinabenigno2022-blip/projeto2025_SC` (HTTP 200), branch `main`.
+- [x] **Artefatos do repositório remoto obtidos/atualizados no computador local**
+  - `git clone` + `git pull --ff-only` (fast-forward até `4684bd9`); `git status` sem diferenças.
+- [x] **Artefatos modificados/criados inseridos/atualizados no repositório remoto**
+  - `src/novo.py` modificado (v1.1) e `src/nova_funcionalidade.py` criado; `git push` concluído.
+- [x] **Solicitações do Roteiro revisadas** (ver detalhamento abaixo).
+- [x] **Resultado submetido** (repositório remoto atualizado + este relatório).
+
+### 6.1 Revisão das solicitações do Roteiro de Aula Prática
+
+| # | Solicitação do roteiro | Situação | Evidência |
+| --- | --- | --- | --- |
+| 1 | Criar conta GitHub e instalar o Git | OK | Conta `carolinabenigno2022-blip` / Git 2.55 |
+| 2 | Configurar nome de usuário no Git | OK | `git config user.name` = `carolinabenigno2022-blip` |
+| 3 | Criar o projeto (repositório) no GitHub | OK | `projeto2025_SC` (público, `main`) |
+| 4 | Copiar a URL HTTPS (botão *Code*) | OK | `https://github.com/carolinabenigno2022-blip/projeto2025_SC.git` |
+| 5 | Obter os artefatos no local (clone) | OK | `git clone` realizado |
+| 6 | Modificar/criar artefatos no computador local | OK | `novo.py` (v1.1) + `nova_funcionalidade.py` |
+| 7a | `git status` | OK | itens alterados/novos identificados |
+| 7b | `git add .` | OK | mudanças na *staging area* |
+| 7c | `git commit -m "..."` | OK | commits `7dca420`, `f8437b4`, `c0a1fa0` |
+| 7d | `git push` | OK | `main` publicada no GitHub |
+| 8 | Verificar no repositório remoto | OK | `novo.py` com `# mudanças realizadas 03:09` e `nova_funcionalidade.py` presentes |
+| 9 | Questão reflexiva | OK | Seção 5 deste relatório |
+
+Consulta do estado:
+```bash
+git status -sb          # ## main...origin/main  (sincronizado)
+git log --oneline       # histórico de commits
+```
