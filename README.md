@@ -47,4 +47,4 @@ git push
 
 ## Autoria
 
-- Conta GitHub: [carolinabenigno2022-blip](https://github.com/carolinabenigno2022-blip)
+- Conta GitHub: Luiz Antônio da Silva Júnior
